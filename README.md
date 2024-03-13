@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## **FIRST**
 
 make sure node.js is installed. you can find guides online, generally, install node for your system and then add it to your system PATH.
-next, make sure next.js is installed. To do this, go to terminal -> npm install next, then you can follow the steps below.
+next, make sure next.js is installed. To do this, open a new terminal and type in  'npm install next', then you can follow the steps below.
 
 ## Getting Started
 
