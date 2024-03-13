@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 
-##first: 
+**FIRST**
 make sure node.js is installed. you can find guides online, generally, install node for your system and then add it to your system PATH.
 next, make sure installed is next.js. go to terminal -> npm install next, then you can follow the steps below.
 
