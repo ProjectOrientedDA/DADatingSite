@@ -1,0 +1,7 @@
+frontend : 
+    add a welcome page
+    add a login page
+
+backend : 
+    create database to store user login information
+    
