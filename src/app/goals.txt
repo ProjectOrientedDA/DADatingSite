@@ -1,9 +1,1 @@
-frontend : 
-    add a welcome page
-    add a login page
-
-    add nice looking text buttons to the main page
-backend : 
-    create database to store user login information
-
-    add a button function that brings up a text page
+make frontend of login page
