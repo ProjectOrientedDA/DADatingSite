@@ -1,5 +1,9 @@
 .main {
   display: flex;
+}
+
+.main2 { /* unused, but included with the original code.*/
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -9,15 +13,24 @@
 
 .main-content {
   flex: 0.8;
+  margin: 20px;
 }
 
-.main-container {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  height: 10%;
-  margin: 100%;
-  border-radius: 200px;
+.sidebar {
+  flex: 0.2;
+  background-color: #1a1a1a;
+  color: white;
+  height: 100%;
+  overflow-y: scroll;
+  justify-self: lefts;
+  align-self: left;
+  padding: 1rem;
 }
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
