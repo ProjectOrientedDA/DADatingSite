@@ -25,6 +25,7 @@
   justify-self: lefts;
   align-self: left;
   padding: 1rem;
+  max-height: 100vh;
 }
 
 .sidebar::-webkit-scrollbar {
