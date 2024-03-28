@@ -1,2 +1,1 @@
-find out how page.js recognizes what "/home" is, 
-and apply that to "/registerpage" as well /
+make profile page for each user
