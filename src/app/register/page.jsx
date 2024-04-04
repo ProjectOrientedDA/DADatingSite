@@ -47,7 +47,7 @@ export default function registerPage() {
                         required 
                     />
                 </div>
-                <button type="submit">Login</button>
+                <button type="submit">Register</button>
             </form>
             
             {/* Display arrayList at the bottom */}

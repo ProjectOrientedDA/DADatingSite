@@ -1,57 +1,25 @@
 'use client';
 import React, { useState } from "react";
+import styles from "./page.module.css";
+import { useRouter } from 'next/navigation'
+
 
 export default function LoginPage() {
+    const router = useRouter()
+
 
     const [password, setPassword] = useState("");
 
     const [username, setUsername] = useState("");
     const handleLogin = () => {
-        // Implement login logic here
-        console.log("Username:", username);
-        console.log("Password:", password);
-
-        event.preventDefault();
-
-        redirectToPage("/services");
+        event.preventDefault(); 
+        router.push('/services');
 
     };
 
-
-
-    // Function to turn paragraph into a redirect link
-    function redirectToPage(url) {
-        // Get the paragraph element
-        var paragraph = document.getElementById("redirect");
-
-        // Create a new anchor element
-        var link = document.createElement("a");
-        
-        // Set the href attribute of the anchor element to the specified URL
-        link.href = url;
-        
-        // Set the text content of the anchor element to the text content of the paragraph
-        link.textContent = paragraph.textContent;
-
-        // Replace the paragraph element with the anchor element
-        paragraph.parentNode.replaceChild(link, paragraph);
-    }
-
-    // Call the redirectToPage function with the desired URL
-
-
-
     return (
         <main>
-            <h2>Login</h2>
-
-            <p id = "redirect">hello</p>
-
-
-            
-
-
-            
+            <h2 className={styles.bonheurlogo}>~ bonheur</h2>
 
             <form onSubmit={handleLogin}>
                 <div>
@@ -76,28 +44,6 @@ export default function LoginPage() {
                 </div>
                 <button type="submit">Login</button>
             </form>
-        </main> 
+        </main>
     );
-
-    // return (
-    //     // <main className={styles.main}>
-    
-    //     <div> 
-    //       <div >
-    //         <div >
-    //           <a
-    //             href="/services"
-    //             target="_blank"
-    //             rel="noopener noreferrer"
-    //           >
-    //             <h2>
-    //               Docs <span>-&gt;</span>
-    //             </h2>
-    //             <p>Find in-depth information about Next.js features and API.</p>
-    //           </a>
-              
-    //           </div>
-    //         </div>
-    //       </div>
-    //     );
 }

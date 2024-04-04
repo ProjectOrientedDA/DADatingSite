@@ -1,0 +1,16 @@
+1) ADD THESE THINGS INTO THE THREE BOXES BELOW IN THE INTRO page
+register and login : 
+
+Register by entering your desired username, password and email and Bonheur will add you to its MySQL database of users.
+When you log in, Bonheur will look the username and password you entered in its database. 
+
+Swiping : 
+
+Bonheur has a large database of bot users. Swiping a like on a bot will notify them that you have "liked" them, and if they like you 
+back, Bonheur will automatically create an instant messaging window between you two. 
+
+Instant Messaging : 
+
+Bonheur bots are powered by an AI library to create responses to your texts. 
+
+
