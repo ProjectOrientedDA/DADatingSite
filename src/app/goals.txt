@@ -1,1 +1,1 @@
-make profile page for each user
+center the white box
