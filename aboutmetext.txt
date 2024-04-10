@@ -1,0 +1,12 @@
+		About Us
+
+We are a duo of programmers from De Anza College. 
+Over a few months, we learned web development using ChatGPT, 
+w3schools, and online resources, and created this demo website using 
+React JS, Next JS, MySQL and more to showcase our skills. Despite 
+challenges, our teamwork and mutual support made it possible.
+
+
+Hi! I'm Franklin, a first year De Anza student(expected graduation 2025). I designed the frontend, routing functionalities
+and ____ of the website. In my free time I like to work out, play instruments, design projects and I'm also a huge boxing nerd as well!
+(Check out my channel at ___)

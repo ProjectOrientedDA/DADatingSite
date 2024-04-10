@@ -12,6 +12,14 @@ page.module.css
   font-size: 40px;
 }
 
+.emailText {
+    color: black; /* Example color */
+    position: absolute;
+    top: 35%; /* Position the top of the logo at the vertical center of the page */
+    left: 45%; /* Position the left side of the logo at the horizontal center of the page */
+    transform: translate(-50%, -50%); /* Adjust the logo's position to center it precisely */
+  }
+
 .usernameText {
   color: black; /* Example color */
   position: absolute;
@@ -26,6 +34,14 @@ page.module.css
   left: 45%; /* Position the left side of the logo at the horizontal center of the page */
   transform: translate(-50%, -50%); /* Adjust the logo's position to center it precisely */
 }
+
+.emailBox {
+    color: black; /* Example color */
+    position: absolute;
+    top: 35%; /* Position the top of the logo at the vertical center of the page */
+    left: 55%; /* Position the left side of the logo at the horizontal center of the page */
+    transform: translate(-50%, -50%); /* Adjust the logo's position to center it precisely */
+  }
 .usernameBox {
   color: black; /* Example color */
   position: absolute;

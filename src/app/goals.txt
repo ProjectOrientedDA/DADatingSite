@@ -1,2 +1,1 @@
-center "~ bonheur" on the login screen
-have "username" and "password" fields about 40% down the page
+2) change titles of pages lmao

@@ -14,3 +14,6 @@ Instant Messaging :
 Bonheur bots are powered by an AI library to create responses to your texts. 
 
 
+2) change titles of pages lmao
+
+3) have register page direct you to login page once you've registered

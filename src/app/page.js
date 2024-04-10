@@ -18,7 +18,7 @@ export default function Home() {
       </a>
 
       <main>
-        <h1 className={styles.bonheurlogo}>~ bonheur</h1>
+        <h1 className={styles.bonheurLogo}>~ bonheur</h1>
         
         <div className={styles.imageContainer}>
           <img src="/romanticbeach.jpg" id="romanticbeach" className={styles.beachImage} />
@@ -45,9 +45,6 @@ export default function Home() {
     <div className={styles.box}>Messaging</div>
   </div>
 </div>
-
-
-
       </main>
     </div>
   );

@@ -23,8 +23,9 @@ export default function LoginPage() {
 
             <form onSubmit={handleLogin}>
                 <div>
-                    <label htmlFor="username">Username:</label>
+                    <label className = {styles.usernameText} htmlFor="username">Username:</label>
                     <input 
+                        className = {styles.usernameBox}
                         type="text" 
                         id="username" 
                         value={username} 
@@ -33,8 +34,9 @@ export default function LoginPage() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="password">Password:</label>
+                    <label className = {styles.passwordText} htmlFor="password">Password:</label>
                     <input 
+                        className = {styles.passwordBox}
                         type="password" 
                         id="password" 
                         value={password} 
@@ -42,7 +44,7 @@ export default function LoginPage() {
                         required 
                     />
                 </div>
-                <button type="submit">Login</button>
+                <button className = {styles.loginButton} type="submit">Login</button>
             </form>
         </main>
     );

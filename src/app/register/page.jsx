@@ -1,45 +1,49 @@
 'use client';
 import React, { useState } from "react";
+import styles from "./page.module.css";
+import { useRouter } from 'next/navigation'
 
-export default function registerPage() {
-    const [arrayList, setArrayList] = useState([]);
+
+export default function RegisterPage() {
+    const router = useRouter()
+
+
     const [password, setPassword] = useState("");
+
     const [username, setUsername] = useState("");
-
-    const createUser = (username, password, email, firstName, lastName, age) => {
-        return {
-            username: username,
-            password: password,
-            email: email,
-            firstName: firstName,
-            lastName: lastName,
-            age: age
-        };
-    };
-
-    const handleLogin = (event) => {
-        event.preventDefault();
-        const newUser = createUser(username, password, "bobby@gmail.com", "bob", "jim", 5);
-        setArrayList([...arrayList, newUser]);
+    const handleLogin = () => {
+        event.preventDefault(); 
+        router.push('/services');
     };
 
     return (
         <main>
-            <h2>Register</h2>
+            <h2 className={styles.bonheurlogo}>~ bonheur</h2>
+
             <form onSubmit={handleLogin}>
                 <div>
-                    <label htmlFor="username">Username:</label>
+                    <label className = {styles.emailText} htmlFor="email">Email:</label>
                     <input 
-                        type="text" 
-                        id="username" 
-                        value={username} 
-                        onChange={(e) => setUsername(e.target.value)} 
+                        className = {styles.emailBox}
+                        onChange={(e) => setPassword(e.target.value)} 
                         required 
                     />
                 </div>
                 <div>
-                    <label htmlFor="password">Password:</label>
+                    <label className = {styles.usernameText} htmlFor="username">Username:</label>
                     <input 
+                        className = {styles.usernameBox}
+                        type="text" 
+                        id="username" 
+                        value={username} 
+                        onChange={(e) => setUsername(e.target.value)} 
+                        
+                    />
+                </div>
+                <div>
+                    <label className = {styles.passwordText} htmlFor="password">Password:</label>
+                    <input 
+                        className = {styles.passwordBox}
                         type="password" 
                         id="password" 
                         value={password} 
@@ -47,22 +51,9 @@ export default function registerPage() {
                         required 
                     />
                 </div>
-                <button type="submit">Register</button>
+                <button className = {styles.loginButton} type="submit">Login</button>
+
             </form>
-            
-            {/* Display arrayList at the bottom */}
-            <div>
-                <h3>User List:</h3>
-                {arrayList.map((user, index) => (
-                    <div key={index}>
-                        <h4>{user.username}</h4>
-                        <p>Password: {user.password}</p>
-                        <p>Email: {user.email}</p>
-                        <p>Full Name: {user.firstName} {user.lastName}</p>
-                        <p>Age: {user.age}</p>
-                    </div>
-                ))}
-            </div>
-        </main> 
+        </main>
     );
 }
