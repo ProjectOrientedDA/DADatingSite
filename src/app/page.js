@@ -1,4 +1,6 @@
 import styles from "./page.module.css";
+import NavBar from "../../components/NavBar";
+
 
 export default function Home() {
   // Define your items here. This could be fetched from an API or defined inline as shown.
@@ -17,8 +19,9 @@ export default function Home() {
   const repeatedLinks = Array(100).fill(links[0]);
 
   return (
-    <main className={styles.main}>
 
+    <main className={styles.main}>
+  
     <div className={styles.sidebar}> 
       <div className={styles.sidebar}>
         <div className={styles.main_content}>
@@ -121,6 +124,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <NavBar></NavBar>
+
     </main>
     );
 }

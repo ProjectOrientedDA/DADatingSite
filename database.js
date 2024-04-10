@@ -3,12 +3,14 @@ const mysql = require('mysql');
 
 const app = express();
 
-const connection = mysql.createConnection({
+const connection = mysql.createConnection({     //change later obviously
     host: 'localhost',
     user: 'root',
     password: 'honeyisfat101',
     database: 'example_db'
 });
+
+export default connection;     //each time you want to make a request in a file, you should include the 'connection' object
 
 connection.connect((err) => {
     if (err) {
@@ -29,8 +31,8 @@ app.get('/people', (req, res) => {
     });
 });
 
-app.listen(3001, () => {
-    console.log('Server is running on port 3001');
+app.listen(4000, () => {
+    console.log('Server is running on port 4000');
 });
 
 console.log('Script ran successfully!');

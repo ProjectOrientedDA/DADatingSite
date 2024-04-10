@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 node 21.7.1 and Next.js 14.1.2
 
+start sql server:: mysql -u root -p
+
 ## **FIRST**
 
 make sure node.js is installed. you can find guides online, generally, install node for your system and then add it to your system PATH.
